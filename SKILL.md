@@ -11,7 +11,7 @@ description: 修复 macOS Gemini 与 Antigravity 的登录循环、OAuth 回调�
 
 | 现象及证据 | 分支 |
 |---|---|
-| Antigravity 超时、模型进程未走已有代理 | [Antigravity 代理继承](references/antigravity.md)，历史真实对话成功 |
+| Antigravity 超时、重开复发、旧请求报错或CLI目录查询失败 | [Antigravity 分流与复测](references/antigravity.md)：代理继承、启动方式、新请求对照；CLI只按已验证范围处理 |
 | Gemini 网页 OAuth 完成却回到登录页；Failed to exchange auth code、curl 28、直连 SYN_SENT | [OAuth 网络与回调](references/oauth-network.md)，历史配置完成但登录验收缺失 |
 | Gemini 已登录，发普通文字即通用错误；同账号网页可用或同机另一账号可用 | [Gemini 初始化修复](references/gemini-init.md)，三账号已验证 |
 | Verify、地区/年龄/组织限制、会员/家庭权益不可用 | 核对正确账号和当前官方资格说明；身份验证由用户完成，权限由管理员处理；不可冒充能修复服务端资格。不要套本地重置流程 |
